@@ -3,8 +3,11 @@ library(dplyr)
 library(ggplot2)
 library(zoo)
 
-# Set to where the project folder is located
-setwd('~/Academic/FALL 2022/MATH 208/Project')
+# Fetch project dir from env
+project_dir <- Sys.getenv("CPU_GPU_PROJECT_DIR")
+
+# Alternatively write the path here
+setwd(project_dir)
 
 cpu_gpu_data <- read_csv('chip_dataset.csv')
 str(cpu_gpu_data)
