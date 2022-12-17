@@ -1,2 +1,8 @@
-*/.DS_Store
+# OS specific
+*.DS_Store
+
+# R specific
+.R_history
+
+# Directives (TO REMOVE PERMANENTLY WHEN DONE)
 Final\ Project\ Description.pdf
